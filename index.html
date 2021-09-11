@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Javascript Basics</title>
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,11 +30,120 @@
         alert("Hello Javascript alert!!") // writes pop up alert
         console.log("Hello there javascript console man!"); // writes to console log in Developer Tools
     </script> -->
-    <script>
+    <!-- <script>
         var firstName = "John"; // string 
         var lastName = "Doe"; // string
         var age = 26; // integers
         var canDrink = true; // boolean
+    </script> -->
+    <!-- <script>
+        var bananas = 6;
+        var apples = 2;
+
+        var var1 = "2.25";
+        var var2 = "5";
+
+        var numFruits = bananas * apples;
+
+        var sentence = parseFloat(var1) + parseInt(var2);
+
+        document.write(sentence);
+
+    </script> -->
+    <!-- <script>
+        var sentence = "Hello Javascript document write";
+
+        document.write(sentence.replace("Javascript", "Python is better tbh"));
+
+        sentence.length; // return current length of a string
+        sentence.indexOf("string"); // find index of the current string you're trying to find
+        sentence.substr(0, 5);  // return a substring starting from the start index and however many characters you want
+        sentence.replace("", ""); // replace a string with another string
+    </script> -->
+    <!-- <script>
+        var age = 26.143345345;
+        var var2 = 4;
+
+        document.write(age.toString() + var2);
+        document.write(age.toFixed(4)); // number method that shows the float decimal places
+    </script> -->
+
+<!-- 
+    <script>
+        A simple If/Else program
+        var age = 65;
+
+        if (age > 64){
+            document.write('Senior Citizen');
+        } else if(age < 12){
+            document.write('Child');  
+        } else { // doesn't show the first one without an else condition
+            document.write('Not a Senior Citizen'); 
+        }
+    </script> -->
+
+<!-- 
+    <script>
+        // A simple If/Else program with a loop
+        var numOfFruits = 5;
+        while(numOfFruits > 0){ // if numOfFruits is greater than 0, we will loop until the conditions are met
+            document.write('We have ' + numOfFruits + ' pieces of Fruit!<br>');
+            numOfFruits -= 1;
+        }
+    </script> -->
+
+    <!-- <script>
+        //do/while loop = do this while this condition is met
+        var numOfFruits = 5;
+        do{
+            document.write('We have ' + numOfFruits + ' pieces of Fruit! <br>');
+            numOfFruits --; // or use the -= 1
+        } while(numOfFruits > 0)
+
+    </script> -->
+
+    <!-- <script>
+        var numOfFruits = 5;
+        for(i=0; i < numOfFruits; i++){ // integer is 0 and as long as the integer is 0, i is less than numOfFruits, and everytime we loop through, we increment i by 1
+            document.write(numOfFruits - i + ' pieces of fruit!<br>'); // document.write(i + ' pieces of fruit!<br>'); 
+        }
+    </script> -->
+    <!-- <script>
+        //printOutMessage();
+        //function printOutMessage(){
+        //    document.write('Hello Javascript Functions Rocks!');
+        document.write(subtract(4,1));
+
+        function subtract(x, y){
+            return x - y;    
+    }    
+    </script> -->
+
+    <!-- <script>
+        var person = {
+            firstName : "John", //property to John
+            lastName: "Doe",
+            age : 26,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        document.write( "My name is " + person.fullName() + " and my age is " + person.age);
+        //document.write( "My name is " + person.firstName + " " + person.lastName );
+    
+    </script> -->
+
+    <script>
+
+        var fruits = ['banana', 'apple', 'orange'];
+        //fruits[0] = 'mango';
+        //fruits.push('mango');
+        //fruits.pop();
+        //fruits.shift();
+        //document.write( fruits.toString() );
+        //fruits = fruits.slice(0, 2); // banana and apple
+        document.write( fruits.sort().reverse() );
     </script>
 </body>
 </html>
+
